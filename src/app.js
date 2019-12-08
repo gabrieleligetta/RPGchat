@@ -13,7 +13,7 @@ app.set('views', path.join(__dirname, './templates/views'))
 hbs.registerPartials(path.join(__dirname, './templates/partials'))
 
 // setup static directory to serve
-app.use(express.static(path.join(__dirname, './src/public')))
+app.use(express.static(path.join(__dirname, './public')))
 
 app.get('/', (req, res) => {
     res.render('home', {
